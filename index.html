@@ -15,7 +15,7 @@
       <div class="glyph" aria-hidden="true"><i></i><i></i><i></i></div>
       <h1 id="title">Get the installer</h1>
       <p class="subhead">Latest build is prepared and ready to download.</p>
-      <a class="download" href="https://github.com/TeamBisonSafeguard/installer-download/releases/latest/download/Installer.zip" download>
+      <a class="download" id="download-link" href="https://github.com/TeamBisonSafeguard/installer-download/releases/latest/download/Installer.zip" download>
         <span class="arrow" aria-hidden="true">↓</span><span>Download</span><span class="key" aria-hidden="true">ZIP</span>
       </a>
       <div class="details">
@@ -25,5 +25,10 @@
       <p class="footnote">Download · extract · run</p>
     </section>
   </main>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('download-link').click();
+    });
+  </script>
 </body>
 </html>
